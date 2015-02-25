@@ -229,7 +229,7 @@ public class SplashScreen extends CordovaPlugin {
     private void loadSpinner() {
         // If loadingDialog property, then show the App loading dialog for first page of app
         String loading = null;
-        if (webView.canGoBack()) {
+        if (false) { //webView.canGoBack()) { //LAU:: this is not supported by XWALK - see https://crosswalk-project.org/jira/browse/XWALK-3612
             loading = preferences.getString("LoadingDialog", null);
         }
         else {
